@@ -88,13 +88,13 @@
 								style="height: 50px; background-color: #f3f3f3; font-size: 18px;">
 								<div style="margin-top: 8px">
 									<span class="glyphicon glyphicon-chevron-left"></span> <span
-										style="font-weight: 600; font-size: 10px color: black;">CONTINUE
-										SHOPPING </span>
+										style="font-weight: 600; font-size: 10px color: black;">VIEW PRODUCTS FOR MORE SHOPPING</span>
 								</div>
-							</a> <a href="" class="btn btn-default"
+							</a> <c:url value="/bankdetails" var="durl"></c:url>
+							<a href="${durl }" class="btn btn-default"
 								style="height: 50px; width: 30%; margin-left: 380px; background-color: #fb641b; font-size: 18px;">
 								<div style="margin-top: 8px">
-									</span> <span style="font-weight: 600; font-size: 15px; color: white;">PLACE
+									 <span style="font-weight: 600; font-size: 15px; color: white;">PLACE
 										ORDER </span>
 								</div>
 							</a>
@@ -159,7 +159,7 @@
 					</div>
 					<!-- End panel- heading -->
 					<div class="panel-body">
-						<img alt="empty cart" src="resources/emptycartimage.png"
+						<img alt="empty cart" src="resources/emptycartimage.jpg"
 							style="width: 350px; height: 250px; margin-left: 365px"> <br>
 						<span
 							style="font-weight: 600; margin-left: 395px; font-size: 20px">

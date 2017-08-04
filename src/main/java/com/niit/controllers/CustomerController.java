@@ -24,7 +24,7 @@ public class CustomerController {
 	public String getRegistrationForm(Model model) {
 
 		model.addAttribute("customer", new Customer());
-		return "registration";
+		return "registrationform";
 	}
 
 	@RequestMapping("/savecustomer")
@@ -33,7 +33,7 @@ public class CustomerController {
 
 		if (result.hasErrors()) {
 
-			return "registration";
+			return "registrationform";
 
 		}
 
@@ -45,7 +45,7 @@ public class CustomerController {
 		if (customer1 != null || user != null) {
 			model.addAttribute("duplicateUser", "Username already Exist");
 			model.addAttribute("duplicateEmail", "Email address already exist");
-			return "registration";
+			return "registrationform";
 		}
 
 		customerService.registerCustomer(customer);

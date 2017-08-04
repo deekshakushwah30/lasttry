@@ -33,14 +33,14 @@
 
 	<div class="container" style="width: 75%; margin-top: 80px">
 		<div class="panel panel-primary">
-			<div class="panel-heading" style="background-color: black">
-				<b><h2>Details About the Product</h2></b>
+			<div class="panel-heading"  "background-color: black">
+				<b><h2 style="margin-center">Details About the Product</h2></b>
 			</div>
 			<!-- end of panel heading -->
 
 			<div class="panel-body" style="padding-top: 40px;">
 				<div class="col-md-7">
-					<c:url value="/resources/images/${product.id}.png" var="imageUrl">
+					<c:url value="/images/${product.id}.jpg" var="imageUrl">
 					</c:url>
 					<img src="${imageUrl}" style="width: 60%; height: 60%">
 				</div>
@@ -87,7 +87,7 @@
 					<security:authorize access="hasRole('ROLE_USER')">
 
 						<b style="margin-left: 638px"> Enter Units</b>
-						<input value=1 id="qty" type="text" name="units"
+						<input  id="qty" type="text" name="units"
 							class="form-control" style="width: 10%; margin-left: 638px" />
 					</security:authorize>
 					<br>
@@ -99,8 +99,7 @@
 						onclick="return Validate()"
 						style="height: 45px; background-color: #fb641b; width: 190px; margin-top: -50px; margin-left: 635px">
 						<span class="glyphicon glyphicon-shopping-cart"
-							style="color: white;">&nbsp</span><strong style="color: white">ADD
-							TO CART</strong>
+							style="color: white;">&nbsp</span></strong>
 					</button>
 
 					&nbsp &nbsp &nbsp &nbsp

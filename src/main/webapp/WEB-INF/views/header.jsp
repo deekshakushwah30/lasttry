@@ -25,25 +25,42 @@
 
 
 <body>
-
+<nav class="navbar navbar-inverse">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-exaple" aria-expanded="false">
-  <span class="sr-only">Toggle navigation</span>
+  <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#collapse-exaple" aria-expanded="false">
+ 
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   </button>
-    <div class="navbar-header">
+    <%-- <div class="navbar-header">
+     
+    <li>
+    <c:url value="resources/images/logo.jpg" var="url5"></c:url>
     
-    <c:url value="images/logo.jpg" var="url5"></c:url>
+      <a class="navbar-brand" href="login">
+      <img src="${url5 }" class="img-circle" height="150px" width="150px">BOOKS MANIA
+      </a>
+ 
+    </li>
+    </div> --%>
+    <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+		
+		
+		
+		     
+    <li>
+    <c:url value="resources/images/logo.jpg" var="url5"></c:url>
     
-    
-      <a class="navbar-brand" href="login"><img src="${url5 }" alt="book" height="60px" width="60px">BOOKS LIBRARY</a>
-    </div>
-    <ul class="nav navbar-nav">
+      <a class="navbar-brand" href="login">
+      <img src="${url5 }" class="img-circle" height="100px" width="100px">BOOKS MANIA
+      </a>
+ 
+    </li>
       <li class="active"><a href="home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
      <li><a href="aboutus"><span class="glyphicon glyphicon-education"></span>about us</a></li>
       <li class="dropdown">
@@ -69,7 +86,7 @@
      <a href="" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span>
         select by category<b class="caret"></b> </a>
   <ul class="dropdown-menu">
-  <li><c:forEach items="${categories }" var="c">
+  <li><c:forEach items="${categorie }" var="c">
   <c:url value="/searchbycategory?searchCondition=${p.category.categoryname }" var="url"></</c:url>
   <a href="${url }">${c.categoryname }</a>
   </c:forEach>
@@ -109,6 +126,7 @@
     
   </div>
   </div>
+</nav>
 </nav>
  
 </body>

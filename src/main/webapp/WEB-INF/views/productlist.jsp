@@ -37,6 +37,7 @@ function confirmDelete(delUrl) {
 </script> 
 
 
+
 </head>
 <body>
  
@@ -49,12 +50,13 @@ function confirmDelete(delUrl) {
     
       <thead>
       
-       <tr><th>Image</th><th>Book Name</th><th>Price</th> <th>Action</th> </tr>
+       <tr><th>Image</th><th>Book Name</th><th>Price</th> <th> Category</th><th>Action</th> </tr>
        
       </thead>
       <tbody>
+      
         <c:forEach items="${products}" var="p">
-        <c:url value="/images/${p.id}.jpg" var="imageUrl"></c:url>
+        <c:url value="/resources/images/${p.id}.jpg" var="imageUrl"></c:url>
         
         <c:url value="/viewproduct${p.id}" var="viewUrl" ></c:url>
         
@@ -71,7 +73,7 @@ function confirmDelete(delUrl) {
           <td> <h3 style="padding-top:40px">  <i class="fa fa-inr" style="font-size:22px;color:red"></i> <span style="color:red" > ${p.price}</span>   </h3> </td>
           
           
-          
+           <td><h3 style="padding-top:40px" >  ${p.category.categoryname}</h3></td>
           <td>
            <a  href="${viewUrl}" class="btn btn-info" style="margin-top:60px " ><span   class="glyphicon glyphicon-info-sign">view book</span></a>  
            

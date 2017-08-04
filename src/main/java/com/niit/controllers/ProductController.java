@@ -56,7 +56,7 @@ public class ProductController {
 		productService.saveProduct(product);
 		
 		MultipartFile image = product.getImage(); 
-		Path path = Paths.get("C:\\Users\\pc\\workspace\\Tryitagain\\src\\main\\webapp\\WEB-INF" + product.getId() + ".jpg");
+		Path path = Paths.get("C:\\Users\\pc\\workspace\\Tryitagain\\src\\main\\webapp\\WEB-INF\\resources\\images\\" + product.getId() + ".jpg");
 		
 					
 		try{
@@ -97,7 +97,7 @@ public class ProductController {
 	{
 		productService.deleteProduct(id);
 		
-		Path path =Paths.get("C:\\Users\\pc\\workspace\\Tryitagain\\src\\main\\webapp\\WEB-INF" + id + ".jpg");
+		Path path =Paths.get("C:\\Users\\pc\\workspace\\Tryitagain\\src\\main\\webapp\\WEB-INF\\resources\\images\\" + id + ".jpg");
 		
 		if(Files.exists(path))
 		{
@@ -135,7 +135,7 @@ public class ProductController {
 	    productService.updateProduct(product); 
 	  
 		MultipartFile image = product.getImage(); 
-		Path path = Paths.get("C:\\Users\\pc\\workspace\\Tryitagain\\src\\main\\webapp\\WEB-INF" + product.getId() + ".jpg");
+		Path path = Paths.get("C:\\Users\\pc\\workspace\\Tryitagain\\src\\main\\webapp\\WEB-INF\\resources\\images\\" + product.getId() + ".jpg");
 		
 					
 		try{

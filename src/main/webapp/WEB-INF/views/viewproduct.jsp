@@ -40,7 +40,7 @@
 
 			<div class="panel-body" style="padding-top: 40px;">
 				<div class="col-md-7">
-					<c:url value="/images/${product.id}.jpg" var="imageUrl">
+					<c:url value="/resources/images/${product.id}.jpg" var="imageUrl">
 					</c:url>
 					<img src="${imageUrl}" style="width: 60%; height: 60%">
 				</div>
@@ -71,6 +71,10 @@
 					<!-- End of third row -->
 
 
+					<tr>
+						<td><strong>Description</strong></td>
+						<td>${product.category.categoryname}</td>
+					</tr>
 					<tr>
 						<td><strong>Description</strong></td>
 						<td>${product.description}</td>

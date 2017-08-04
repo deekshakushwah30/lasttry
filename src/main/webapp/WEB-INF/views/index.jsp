@@ -1,6 +1,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 <title>Insert title here</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,7 +28,7 @@ so lets start our friendship with them.....</strike></marquee>
 
 
 
-<div class="container">
+<div class="container-fluid">
  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -33,21 +36,37 @@ so lets start our friendship with them.....</strike></marquee>
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/13.jpg" alt="los books" style="width:100%;">
+        <img src="resources/images/kj.jpg" alt="los books" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="images/2.jpg"  style="width:100%;">
+        <img src="resources/images/kk.jpg"  style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="images/3.jpg"  style="width:100%;">
+        <img src="resources/images/ll.jpg"  style="width:100%;">
       </div>
+      
+      <div class="item">
+        <img src="resources/images/c1.jpg" alt="los books" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="resources/images/c5.jpg"  style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="resources/images/c6.jpg"  style="width:100%;">
+      </div>
+      
     </div>
 
     <!-- Left and right controls -->

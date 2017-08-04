@@ -77,7 +77,7 @@
   </c:url><a href="${url1 }">All</a></li></ul></li>
   <li>
   <security:authorize access="hasRole('ROLE_USER')">
-  <li><a href="<c:url value="/cart/getcart"></c:url>">Cart</a></li>
+  <li><a href="<c:url value="/cartgetcart"></c:url>">Cart</a></li>
   </security:authorize></li>
   <ul class="nav navbar-nav navbar-right">
   <li>

@@ -112,7 +112,7 @@
 
 									</tbody>
 								</table>
-								<input type="submit" value="submit" class="btn  btn-success">
+								<input type="submit" value="placeorder" class="btn  btn-success">
 							</div>
 
 

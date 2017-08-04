@@ -35,6 +35,14 @@ public class CustomerOrderController {
 		
 	}
 	
+	
+	@RequestMapping("/thanks")
+	public String details()
+	{
+		return "thanks";
+	}
+	
+	
 	@RequestMapping("/cartorder{cartId}")
 	public String creatOrder(@PathVariable int cartId,@ModelAttribute ShippingAddress shippingAddress,Model model)
 	{
@@ -50,11 +58,19 @@ public class CustomerOrderController {
 			
 	}
 	
+
 	@RequestMapping("/cartconfirm{id}")
 	public String confirm(@ModelAttribute CustomerOrder customerOrder,@PathVariable int id)
 	{
 		cartItemService.removeAllCartItems(id);
-		return "thanks";
+		return "bankdetails";
 	}
 	
+
+	/*@RequestMapping("/bankdetails")
+	public String confirm()
+	{
+		
+		return "bankdetails";
+	}*/
 }

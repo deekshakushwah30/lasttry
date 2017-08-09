@@ -11,15 +11,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Order Details</title>
+<title> Details of your order</title>
 <%@ include file="header.jsp"%>
 </head>
 <body>
+<br>
+<br>
 
 	<jsp:useBean id="now" class="java.util.Date" />
 
 	<div class="container-wrapper">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="page-header">
 				<h1><b> Order Confirmation  </b></h1>
 

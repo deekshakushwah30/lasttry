@@ -30,8 +30,10 @@
 </head>
 <body>
 
+<br>
+<br>
 
-	<div class="container" style="width: 75%; margin-top: 80px">
+	<div class="container-fluid" style="width: 75%; margin-top: 80px">
 		<div class="panel panel-primary">
 			<div class="panel-heading"  "background-color: black">
 				<b><h2 style="margin-center">Details About the Product</h2></b>

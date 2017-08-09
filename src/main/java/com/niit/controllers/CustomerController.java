@@ -57,14 +57,14 @@ public class CustomerController {
 		return "editprofile";
 	}
 */
-/*	@RequestMapping("/forgotpasswordform")
+	/*@RequestMapping("/forgotpasswordform")
 	public String forgotPassword() {
 
 		return "forgotpassword";
 
-	}*/
+	
 
-/*	@RequestMapping("/securityquestionform")
+	@RequestMapping("/securityquestionform")
 	public String securityQuestion(@RequestParam String username, Model model) {
 		Customer customer = customerService.getCustomerByUsername(username);
 
@@ -79,9 +79,9 @@ public class CustomerController {
 		model.addAttribute("customer", customer);
 		return "securityquestionanswer";
 
-	}*/
+	}
 
-/*/@RequestMapping("/updatepassword")
+@RequestMapping("/updatepassword")
 	public String updatePassword(@RequestParam String username, @RequestParam String securityanswer,
 			@RequestParam String pswd, Model model, @ModelAttribute(name = "customer") Customer customer) {
 
@@ -94,15 +94,15 @@ public class CustomerController {
 			return "securityquestionanswer";
 		}
 
-		//if (customer1 == null) {
-			//model.addAttribute("useranswer", "Security answer does not match !!");
-			//return "securityquestionanswer";
+		if (customer1 == null) {
+			model.addAttribute("useranswer", "Security answer does not match !!");
+			return "securityquestionanswer";
 
 		}
 		
 		customerService.updateUser(pswd, username);
 		return "login" ;
 
-	}
-*/
+	}*/
+
 }

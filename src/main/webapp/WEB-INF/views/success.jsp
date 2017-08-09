@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title> Successful Visit</title>
 </head>
-<body>
+<body><br>
 Product is added
 </body>
 </html><%@ include file="footer.jsp" %>

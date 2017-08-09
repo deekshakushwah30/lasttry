@@ -11,9 +11,13 @@
 <%@ include file="header.jsp"%>
 </head>
 <body>
+<br>
+<br>
+<br>
 
 
-	<div class="container" style="width: 40%; margin-top: 100px">
+
+	<div class="container-fluid" style="width: 40%; margin-top: 100px">
 
 
 		<div class="panel panel-primary">

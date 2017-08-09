@@ -15,16 +15,18 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<title>Insert title here</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><title>Sign Up Here</title>
 </head>
 <body>
 <!-- include javascript, jQuery FIRST -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-<jsp:include page="header.jsp"></jsp:include>
+<br>
+<br>
+<br>
+
 <div class="container wrapper">
-<div class="container">
+<div class="container-fluid">
 
 <div class="panel panel-primary" style="height: 554px; width: 800px; margin:auto">
 
@@ -48,11 +50,11 @@
 <form:errors path="user.username" cssStyle="color:red"></form:errors>
 </div>
 
-<div class="form-group">
+ <div class="form-group">
 <form:label path="user.password">Enter Password</form:label>
 <form:input path="user.password"/>
-<form:errors path="user.password" cssStyle="color:red"></form:errors>
-</div>
+<form:errors path="user.password" cssStyle="color:red" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at least one number and one uppercase and lower case letter and atleast 8 or more characters"></form:errors>
+</div> 
 
 <div class="form-group">
 <form:label path="firstname">Enter First Name</form:label>
@@ -172,4 +174,3 @@
 
 </body>
 </html>
-<%@ include file="footer.jsp" %>

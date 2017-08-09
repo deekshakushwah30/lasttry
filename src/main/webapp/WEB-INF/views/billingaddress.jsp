@@ -14,8 +14,11 @@
 </head>
 <body>
 
+<br>
 
-<div class"container" style="width:25%">
+
+<br>
+<div class"container-fluid" style="width:25%">
  <div class="panel panel-warning">
    <div class="panel-heading">
     <h4>Billing Address</h4>

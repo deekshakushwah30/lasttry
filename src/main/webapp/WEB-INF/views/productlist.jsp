@@ -4,7 +4,7 @@
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
  <%@ taglib prefix="security"
 	uri="http://www.springframework.org/security/tags"%>
-<title>Product List</title>
+<title>BOOKS  List</title>
 <%@ include file="header.jsp" %>
  
 <html>
@@ -41,10 +41,14 @@ function confirmDelete(delUrl) {
 </head>
 <body>
  
+ <br>
+<br>
+<br>
+
  
   <div class="container-fluid">
   
-   <b><h2><center>List of Products</center></h2></b><br><br>
+   <b><h2><center>List of All Available Books</center></h2></b><br><br>
    
     <table class="table table-hover table-striped table-bordered" >
     
@@ -75,13 +79,13 @@ function confirmDelete(delUrl) {
           
            <td><h3 style="padding-top:40px" >  ${p.category.categoryname}</h3></td>
           <td>
-           <a  href="${viewUrl}" class="btn btn-info" style="margin-top:60px " ><span   class="glyphicon glyphicon-info-sign">view book</span></a>  
+           <a  href="${viewUrl}" class="btn btn-info" style="margin-top:60px " ><span   class="glyphicon glyphicon-info-sign"></span></a>  
            
       
            <security:authorize access="hasRole('ROLE_ADMIN')">
-           <a href="${deleteUrl}"   style="margin-top:60px"><span  class="glyphicon glyphicon-trash" ></span>  </a>  
+           <a href="${deleteUrl}" class="btn btn-warning"  style="margin-top:60px"><span  class="glyphicon glyphicon-trash" ></span>  </a>  
                     
-           <a href="${editUrl}"  style="margin-top:60px" ><span  class="glyphicon glyphicon-pencil" ></span></a>   
+           <a href="${editUrl}"  class="btn btn-primary" style="margin-top:60px" ><span  class="glyphicon glyphicon-pencil" ></span></a>   
            </security:authorize>
            </td>
          </tr>

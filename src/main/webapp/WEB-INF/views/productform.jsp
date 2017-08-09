@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<title>Product Form</title>
+<title>books  Form</title>
 <%@ include file="header.jsp"%>
 <html>
 <head>
@@ -10,16 +10,19 @@
 
 </head>
 <body>
+<br>
+<br>
+
 
 	<!-- Spring form tab -->
 
-	<div class="container" style="width: 40%; margin-top: 100px">
+	<div class="container-fluid" style="width: 40%; margin-top: 100px">
 		<!-- http://localhost:8080/ecommerce/saveproduct -->
 
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3>
-					<b>Product Form</b>
+					<b>Add New Books</b>
 				</h3>
 			</div>
 			<div class="panel-body">

@@ -35,7 +35,7 @@ public class HomeController {
 		{
 			session.setAttribute("categories", productService.getAllCategories());
 			
-			return "home";
+			return "index";
 		}
 		
 	
@@ -45,10 +45,10 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping("/call")
-	public  String call()
+	@RequestMapping("/contact")
+	public  String contact()
 	{
-		return "call";
+		return "contact";
 	}
 	@RequestMapping("/login")
 	public  String login()

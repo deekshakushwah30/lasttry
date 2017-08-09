@@ -9,10 +9,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>shiiping address</title>
 </head>
 <body>
+<br>
 
+<br>
+<div class="container-fluid">
 	<c:url value="cartorder${cartid}" var="url"></c:url>
 	<form:form action="${url }" modelAttribute="shipingAddress">
 		<form:hidden path="id" />
@@ -65,6 +68,6 @@
 			</div>
 		</div>
 	</form:form>
-
+</div>
 </body>
 </html>

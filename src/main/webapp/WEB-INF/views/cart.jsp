@@ -7,11 +7,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Cart</title>
+	<jsp:include page="header.jsp" />
+<title> Your Cart</title>
 
 </head>
 <body style="background-color: #f3f3f3">
-	<jsp:include page="header.jsp" />
+<br>
+<br>
+
 	<div class="container-fluid">
 		<c:forEach items="${cart.cartItems}" var="cartItem">
 			<c:set var="totalitems" value="${cartItem.quantity + totalitems}">
@@ -49,7 +52,7 @@
 
 										<tr>
 											<td><img
-												src="resources/images/${cartItem.product.id}.png"
+												src="resources/images/${cartItem.product.id}.jpg"
 												style="width: 140px; height: 130px"></td>
 											<td>
 												<h3>${cartItem.product.productname}</h3>
@@ -164,14 +167,14 @@
 
 			<div class="container">
 				<div class="panel">
-					<div class="panel panel-heading">
-						<h2>
-							<b>Shopping Cart</b>
+					<div class="panel panel-heading ">
+						<h2><center>
+							<b>Shopping Cart</b></center>
 						</h2>
 					</div>
 					<!-- End panel- heading -->
 					<div class="panel-body">
-						<img alt="empty cart" src="resources/emptycartimage.png"
+						<img alt="empty cart" src="resources/emptycartimage.jpg"
 							style="width: 350px; height: 250px; margin-left: 365px"> <br>
 						<span
 							style="font-weight: 600; margin-left: 395px; font-size: 20px">

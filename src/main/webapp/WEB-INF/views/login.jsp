@@ -7,10 +7,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>login here</title>
 </head>
-<body>
-<div class="panel panel-primary" style="height: 554px; width: 800px; margin:auto">
+<body><br><br>
+<br>
+<br>
+
+<br>
+<br>
+
+
+
+
+
+<br><div class="container-fluid">
+<div class="panel panel-primary" style="width:600px; height:200px; margin:auto;">
 
 <div class="panel-heading" style="text-align:center; font-size:25px">Login Here</div>
 
@@ -20,18 +31,13 @@
 <form action="${login }" method="post">
 Enter Username <input type="text" name="j_username"><br>
 Enter password <input type="password" name="j_password"><br>
-<br>
-<input type="checkbox" name="remember">Remember password<br>
-<br>
 
 
-<c:url value="/forgot" var="forgot"></c:url>
-<a href="${ forgot}">forgot password?</a><br>
 <br>
 <input type="submit" value="Login">
 </form>
 </div>
 </div>
-
+</div>
 </body>
-</html><%@ include file="footer.jsp" %>
+</html><%-- <%@ include file="footer.jsp" %> --%>

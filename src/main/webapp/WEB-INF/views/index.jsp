@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Insert title here</title>
+<title>BOOKS MANIA</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -20,11 +20,15 @@
 </head>
 
 <body>
+<br>
+<br>
+<br>
+<br>
 
 <marquee>
-
-<strike> BOOKS are our best best friend.........
-so lets start our friendship with them.....</strike></marquee>
+<h4>
+ BOOKS are our best best friend.........
+so lets start our friendship with them.....</h4></marquee>
 
 
 
@@ -39,32 +43,37 @@ so lets start our friendship with them.....</strike></marquee>
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
       <li data-target="#myCarousel" data-slide-to="5"></li>
+       <li data-target="#myCarousel" data-slide-to="6"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="resources/images/kj.jpg" alt="los books" style="width:100%;">
+        <img src="resources/images/c6.jpg" alt="los books" style="height:80%;width:100%;">
       </div>
 
       <div class="item">
-        <img src="resources/images/kk.jpg"  style="width:100%;">
+        <img src="resources/images/c2.jpg"  style="height:80%;width:100%;">
       </div>
     
       <div class="item">
-        <img src="resources/images/ll.jpg"  style="width:100%;">
+        <img src="resources/images/ll.jpg"  style="height:80%;width:100%;">
       </div>
       
       <div class="item">
-        <img src="resources/images/c1.jpg" alt="los books" style="width:100%;">
+        <img src="resources/images/xx.jpg" alt="los books" style="height:80%;width:100%;">
       </div>
 
       <div class="item">
-        <img src="resources/images/c5.jpg"  style="width:100%;">
+        <img src="resources/images/mm.jpg"  style="height:80%;width:100%;">
       </div>
     
       <div class="item">
-        <img src="resources/images/c6.jpg"  style="width:100%;">
+        <img src="resources/images/kk.jpg"  style="height:80%;width:100%;">
+      </div>
+      
+       <div class="item">
+        <img src="resources/images/c4.jpg"  style="height:80%;width:100%;">
       </div>
       
     </div>

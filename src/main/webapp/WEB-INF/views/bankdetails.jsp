@@ -4,14 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>BANK DETAILS</title>
 <%@ include file="header.jsp"%>
 
 </head>
 <body>
 
-	
-<div class="container" style="width: 40%; margin-top: 100px">
+	<br>
+<br>
+
+<br>
+<div class="container-fluid" style="width: 40%; margin-top: 100px">
 		<!-- http://localhost:8080/ecommerce/saveproduct -->
 
 		
@@ -29,11 +32,11 @@
 				<c:url value="thanks" var="url"></c:url>
 				  <form:form action="${url}" modelAttribute="order">
 			                    ENTER CARD NUMBER:
-				                <input TYPE="password"  value="card">
+				                <input TYPE="password"  value=" ">
 		                        <br><br>
 			                    ID=ORDER ID: S18006500${order.orderId }<br><br>
 			                    CARD HOLDER NAME:
-				                <input TYPE="text"  value="name"><br>
+				                <input TYPE="text"  value=" "><br>
 				                <br>
 		                        ENTER 3 DIGIT CARD PIN:
 				                <input TYPE="password">
@@ -53,3 +56,4 @@
 	</div>
 </body>
 </html>
+ <%@ include file="footer.jsp" %>

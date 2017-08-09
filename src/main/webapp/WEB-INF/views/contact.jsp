@@ -46,7 +46,7 @@
 			                  Enter Name:
 				                <input TYPE="text"  value=" "><br>
 				                <br>
-		                        Enter query:
+		                        Enter Query:
 				                <input type="file">
                                 <br>
 			                    <br>

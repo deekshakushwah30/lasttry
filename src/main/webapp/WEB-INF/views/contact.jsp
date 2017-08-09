@@ -43,7 +43,7 @@
 				                <input TYPE="text"  value=" ">
 		                        <br><br>
 			                    
-			                  Name:
+			                  Enter Name:
 				                <input TYPE="text"  value=" "><br>
 				                <br>
 		                        Enter query:

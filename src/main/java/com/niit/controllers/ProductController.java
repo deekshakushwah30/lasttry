@@ -154,7 +154,7 @@ public class ProductController {
 	  
 	}
 	
-	/*@RequestMapping("searchbyCategory{cid}")
+	@RequestMapping("searchbyCategory{cid}")
 	public String selectByCategory(@PathVariable int cid,Model model)
 	{
 		List<Product> products = productService.getProductByCategory(cid);
@@ -173,7 +173,7 @@ public class ProductController {
 		 model.addAttribute("searchCondition",SearchKeyword);		
 	     return "productlist";
 		 
-	}*/
+	}
 	
 	
 	
